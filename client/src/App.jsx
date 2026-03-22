@@ -2,7 +2,7 @@ import { useState } from "react";
 import axios from "axios";
 import "./index.css";
 
-const API_URL = "http://localhost:3001/api/summarize";
+const API_URL = import.meta.env.VITE_API_URL || "http://localhost:3001/api/summarize";
 
 const EXAMPLE_TEXT = `NASA's James Webb Space Telescope has captured unprecedented images of distant galaxies, revealing details about the early universe never seen before. Scientists are particularly excited about observations showing galaxy formation just 300 million years after the Big Bang. The telescope's infrared capabilities allow it to peer through cosmic dust clouds that previously blocked our view. Researchers believe these findings will fundamentally reshape our understanding of how stars and galaxies form.`;
 
